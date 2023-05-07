@@ -1,0 +1,31 @@
+@use 'variaveis';
+
+.footer {
+    margin-top: 24px;
+    display: block;
+    align-items: center;
+    padding: 16px;
+
+    &__list-links {
+        display: flex;
+        justify-content: end;
+        list-style: none;
+
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+
+        &__item {
+            padding: 20px;
+        }
+    }
+
+    p {
+        justify-content: center;
+        font-family: sans-serif;
+        justify-content: center;
+        color: variaveis.$coreTextoPricipal;
+        font-size: small;
+    }
+
+}

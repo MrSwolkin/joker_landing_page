@@ -1,0 +1,48 @@
+@use 'variaveis';
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-content:center ;
+    margin-bottom: 18px;
+
+    @media (max-width: 768px) {
+        max-width: 760px;
+        width: 80%;
+        
+        
+    }
+
+    &__container {
+        @media (max-width: 768px) {
+            max-width: 760px;
+            width: 80%;
+            
+
+
+            img {
+                width: 500px;
+            
+            }
+        }
+        
+
+        &__links {
+            display: flex;
+            justify-content:space-between;
+            text-decoration: none;
+        &__item {
+                margin: 8px 24px;
+                padding: 0 16px;
+                list-style: none;
+            }
+        }
+    }
+
+    .button {
+        color: variaveis.$corTextoSecundario;
+        list-style: none;
+        text-decoration: none;
+        font-size: 18px;
+    }
+}
